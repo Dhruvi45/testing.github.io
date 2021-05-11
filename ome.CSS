@@ -106,7 +106,7 @@ nav{
     }
      nav ul.open {
         background: red;
-        left: 300px;  
+        width: 100%;
         flex-direction: column;
         pointer-events: all;
       }

@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    margin: 0;
+}
+
+#logo
+{
+	float: left;
+    margin: 0;	
+    width:200px;
+    height:200px;
+}
+#title
+{
+	font-size:30px;
+	font-weight: bold;
+	color: #cc0000;
+    padding: 0px;
+    margin: 0cm;
+    padding-left: 0px;    
+}
+nav{ 
+    display: flex;  
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+    box-shadow:0 3px 5px seagreen;
+    overflow: hidden;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    font-size: 20px;
+    margin: 0 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    
+}
+nav ul li a img{
+    height: 30px;
+    width: 30px;
+}
+nav ul li a::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    background-color: blue;
+    transition: transform 0.2s ease;
+    opacity: 0;
+}
+nav ul li a:hover::after{
+    transform: translateY(-15px);
+    opacity: 1;
+}
+@media  (max-width: 480px){
+    .line {
+        width: 30px;
+        height: 3px;
+        background: blue;
+        margin: 5px;
+      }
+      .hamburger {
+        
+      position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 8%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+      }
+      #logo
+      {
+          width: 100px;   
+          height: 100px;
+         }
+      #title
+{
+	font-size:15px;
+	font-weight: bold;
+	color: #cc0000;
+    padding: 30px;
+    padding-left: 130px;    
+}
+nav{
+    background-color: white;
+    box-shadow: none;
+   
+}
+       nav ul{
+        text-align: center;
+        left: 300px;  
+        pointer-events: none;
+    }
+     nav ul.open {
+        background: red;
+        left: 300px;  
+        flex-direction: column;
+        pointer-events: all;
+      }
+      
+      nav ul li {
+        opacity: 0;
+      }
+      nav ul li a {
+        font-size: 25px;
+        color:white;
+      }
+      
+      nav ul li.fade {
+        opacity: 1;
+      }
+}

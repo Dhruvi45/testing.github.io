@@ -93,6 +93,7 @@ nav ul li a:hover::after{
 	color: #cc0000;
     padding: 30px;
     padding-left: 130px;    
+	width:350px;
 }
 nav{
     background-color: white;
